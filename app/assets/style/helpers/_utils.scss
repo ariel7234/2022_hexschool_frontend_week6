@@ -1,0 +1,63 @@
+// .h-24 {
+//   height: 24px;
+// }
+// .h-42 {
+//   height: 42px;
+// }
+
+// color
+.gradient-custom {
+  background-image: linear-gradient(104deg, $primary, $secondary);
+}
+
+// border
+
+@include media-breakpoint-up(xs) {
+  .pe-6px {
+    padding-right: 6px;
+  }
+
+  .w-24 {
+    width: 24px;
+  }
+  .w-175 {
+    width: 175px;
+  }
+
+  .d-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+
+  .border-gradient-bottom {
+    border-image: linear-gradient(90deg, $primary 0%, $primary 50%, $secondary 50%, $secondary 100%) 2 2 2 2;
+    border-image-width: 0 0 2px 0;
+  }
+  .border-gradient-top {
+    border-image: linear-gradient(90deg, $primary 0%, $primary 50%, $secondary 50%, $secondary 100%) 2 2 2 2;
+    border-image-width: 2px 0 0 0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+}
+@include media-breakpoint-up(md) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+
+  .border-image-md-none {
+    border-image: none;
+  }
+}

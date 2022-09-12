@@ -1,0 +1,7 @@
+.navbar-dark .navbar-toggler {
+  color: $primary !important;
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
