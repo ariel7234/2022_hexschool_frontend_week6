@@ -1,0 +1,40 @@
+ .card{
+  background-color: $gray;
+  border-color: transparent;
+  color: $white;
+  border-radius: 12px;
+
+
+
+}
+ .card-header{
+  border: none;
+  margin-bottom: 0;
+  padding: 0;
+ }
+ .card-title{
+  margin-bottom: 0;
+ }
+ .card-body{
+  border: none;
+  margin-bottom: 0;
+  padding: 0;
+ }
+
+ .card-hover1{
+  color: $gray-light !important;
+  &:hover{
+    color: $white !important;
+    background-color: $gray-dark !important;
+    border: 1px solid $primary;
+
+  }
+
+  @include media-breakpoint-down(md){
+    color: $white !important;
+  }
+ }
+
+ .card-hover:hover{
+  border: 2px solid $primary;
+}
