@@ -1,7 +1,7 @@
+"use strict";
+
 //FIXME: swiper 無法自訂每頁卡片數量
-
 // var cardSwiper = new Swiper(".swiper-card", {
-
 //   loop: true,
 //   autoplay: {
 //     delay: 2500,
@@ -26,17 +26,17 @@
 //     // },
 //   },
 // });
-
 var shareSwiper = new Swiper(".swiper-custom", {
   effect: "fade",
   fadeEffect: {
-    crossFade: true,
+    crossFade: true
   },
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    prevEl: ".swiper-button-prev"
   },
   pagination: {
-    el: ".swiper-pagination",
-  },
+    el: ".swiper-pagination"
+  }
 });
+//# sourceMappingURL=all.js.map
