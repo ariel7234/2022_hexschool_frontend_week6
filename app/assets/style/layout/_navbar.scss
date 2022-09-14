@@ -1,7 +1,47 @@
+.navbar {
+  &::before {
+    content: "";
+    position: fixed;
+    top: 80px;
+    left: 0;
+    border-bottom: 2px solid $primary;
+    width: 50%;
+    @include media-breakpoint-down(md) {
+      top: 68px;
+    }
+  }
+  &::after {
+    content: "";
+    position: fixed;
+    top: 80px;
+    right: 0;
+    border-bottom: 2px solid $secondary;
+    width: 50%;
+    @include media-breakpoint-down(md) {
+      top: 68px;
+    }
+  }
+}
+
 .navbar-dark .navbar-toggler {
   color: $primary !important;
   border: none;
   &:focus {
     box-shadow: none;
+  }
+}
+
+.nav-btn {
+  color: $white;
+  border: 1px solid $white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  white-space: nowrap;
+
+  &.active,
+  &:hover {
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
   }
 }

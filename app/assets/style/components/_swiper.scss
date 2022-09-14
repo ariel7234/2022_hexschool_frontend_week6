@@ -1,7 +1,209 @@
 .swiper {
   width: 100%;
+  height: 429px;
+  @media (max-width:991px) {
+    height: auto;
+  }
+  &-img {
+    top: 0;
+    left: 10px;
+    width: 60%;
+    height: 90%;
+    border-radius: 24px;
+    position: absolute;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #7C7E77;
+      border-radius: 24px;
+      left: -10px;
+      top: 10px;
+      z-index: -1;
+      @media (max-width:991px) {
+        left: -5px;
+        top: 5px;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+    @media (max-width:991px) {
+      position: relative;
+      width: calc(100% - 5px);
+      height: 213px;
+      left: 5px;
+      margin-bottom: 40px;
+    }
+  }
+  .card {
+    width: 45%;
+    padding: 32px;
+    border-radius: 24px 24px 24px 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: #494755;
+    background-color: $white;
+    h3 {
+      font-size: 18px;
+    }
+    &-img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 32px;
+      bottom: 100%;
+      transform: translateY(50%);
+      @media (max-width:991px) {
+        width: 80px;
+        height: 80px;
+        right: 24px;
+        top: -30px;
+        bottom: auto;
+        transform: none;
+      }
+    }
+    @media (max-width:991px) {
+      position: relative;
+      width: 100%;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    content: '';
+  }
+
+  &-button-next, &-button-prev {
+    position: unset;
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    color: $primary;
+  }
+
+  .swiper-pagination {
+    position: unset;
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: $primary;
+      opacity: initial;
+      &-active {
+        width: 16px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  &-buttons {
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 10;
+    position: absolute;
+    @media (max-width: 991px) {
+      position: initial;
+      transform: none;
+    }
+  }
 }
 
+
+
+// .swiper {
+//   width: 100%;
+//   height: 429px;
+//   @include media-breakpoint-up(md) {
+//     height: auto;
+//   }
+  
+//   .card{
+//     width: 45%;
+//     bottom: 0;
+//     height: 0;
+//     position: absolute;
+//   }
+// }
+// .swiper-img {
+//   top: 0;
+//   left: 10px;
+//   width: 60%;
+//   height: 90%;
+//   border-radius: 24px;
+//   position: absolute;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     border: 1px solid $gray-lighter;
+//     border-radius: 24px;
+//     left: -10px;
+//     top: 10px;
+//     z-index: -1;
+//     @include media-breakpoint-up(md) {
+//       left: -5px;
+//       top: 5px;
+//     }
+//   }
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 24px;
+//   }
+//   @include media-breakpoint-up(md) {
+//     position: relative;
+//     width: calc(100%-5px);
+//     height: 213px;
+//     left: 5px;
+//     margin-bottom: 40px;
+//   }
+// }
+// .swiper-buttons{
+//   bottom: 0;
+//   left: 30%;
+//   transform: translateX(-50%);
+//   z-index: 10;
+//   position: absolute;
+//   @include media-breakpoint-up(md){
+//     position: inherit;
+//     transform: none;
+//   }
+// }
+// .swiper-button-next:after,
+// .swiper-button-prev:after {
+//   content: "";
+// }
+
+// .swiper-button-next,
+// .swiper-button-prev {
+//   position: unset;
+//   width: 24px;
+//   height: 24px;
+//   margin-top: 0;
+//   // color: $;
+// }
+
+// .swiper-pagination {
+//   position: unset;
+//   width: auto;
+//   .swiper-pagination-bullet {
+//     background-color: $primary;
+//     opacity: initial;
+//     &-active {
+//       width: 16px;
+//       border-radius: 100px;
+//     }
+//   }
+// }
 // .swiper-card {
 //   li {
 //     max-width: fit-content !important;
